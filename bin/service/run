@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "*** starting aurora-pvinverter ***"
+BASE=/data/drivers/aurora-pvinverter
+cd $BASE
+exec 2>&1
+HOME=$BASE exec $BASE/aurora-pvinverter.py

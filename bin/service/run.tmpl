@@ -1,0 +1,5 @@
+#!/bin/sh
+echo "*** starting aurora-pvinverter ***"
+BASE=${BASE}
+exec 2>&1
+HOME=$BASE exec $BASE/aurora-pvinverter.py
